@@ -1,0 +1,23 @@
+[[language]]
+name = "latex"
+
+[language-server.texlab.config.texlab.build]
+args = [
+  "-pdf",
+  "-interaction=nonstopmode",
+  "-synctex=1",
+  "-aux-directory=/tmp",
+  "-output-directory=/tmp", # "."
+  "%f"
+]
+onSave = true
+auxDirectory = "/tmp"
+pdfDirectory = "/tmp"
+forwardSearchAfter = true
+
+[language-server.texlab.config.texlab.chktex]
+onOpenAndSave = true
+
+[language-server.texlab.config.texlab.forwardSearch]
+executable = "/Applications/Skim.app/Contents/SharedSupport/displayline"
+args = ["-AppleWindowTabbingMode always", "-r", "-g", "%l", "%p", "%f"]

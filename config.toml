@@ -1,0 +1,49 @@
+# theme = "solarized_light"
+theme = "amberwood"
+
+[editor]
+shell = ["zsh", "-c"]
+true-color = true
+auto-save = true
+bufferline = "multiple"
+cursorline = true
+end-of-line-diagnostics = "hint"
+
+[editor.lsp]
+snippets = true
+# display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+character = "╎"
+render = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+right = ["diagnostics", "primary-selection-length", "position", "file-encoding", "file-type"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal."space"]
+
+[keys.normal]
+"f" = "file_picker_in_current_buffer_directory" # force picker to use buffer's cwd
+C-s = ":w" # save with ctrl-s
+A-x = "extend_to_line_bounds" # unselect a line with shift+X
+X = "select_line_above"
+C-space = ":open ~/Dropbox/Unimi/Dottorato/Notes/Next.md"
+
+[keys.select]
+A-x = "extend_to_line_bounds" # unselect a line with shift+X
+X = "select_line_above"
