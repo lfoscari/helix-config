@@ -4,7 +4,7 @@ theme = "amberwood"
 [editor]
 shell = ["zsh", "-c"]
 true-color = true
-auto-save = true
+# auto-save = true
 bufferline = "multiple"
 cursorline = true
 end-of-line-diagnostics = "hint"
@@ -35,10 +35,8 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-[keys.normal."space"]
-
 [keys.normal]
-"f" = "file_picker_in_current_buffer_directory" # force picker to use buffer's cwd
+# "f" = "file_picker_in_current_buffer_directory" # force picker to use buffer's cwd
 C-s = ":w" # save with ctrl-s
 A-x = "extend_to_line_bounds" # unselect a line with shift+X
 X = "select_line_above"
