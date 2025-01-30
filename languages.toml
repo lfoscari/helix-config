@@ -19,8 +19,8 @@ forwardSearchAfter = true
 onOpenAndSave = true
 
 [language-server.texlab.config.texlab.forwardSearch]
-executable = "/Applications/Skim.app/Contents/SharedSupport/displayline"
-args = ["-AppleWindowTabbingMode always", "-r", "-g", "%l", "%p", "%f"]
+executable = "evince-synctex"
+args = ["-f", "%l", "%p", "\"texlab -i %f -l %l\""]
 
 
 [[language]]
