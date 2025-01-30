@@ -17,13 +17,12 @@ forwardSearchAfter = true
 
 [language-server.texlab.config.texlab.chktex]
 onOpenAndSave = true
+additionalArgs = ["-n3"]
 
 [language-server.texlab.config.texlab.forwardSearch]
 executable = "evince-synctex"
 args = ["-f", "%l", "%p", "\"texlab -i %f -l %l\""]
 
-[language-server.texlab.config.texlab.ignored]
-ignored = ["latex-lint.latex.enclose-with-parentheses"]
 
 
 [[language]]
