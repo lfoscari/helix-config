@@ -17,7 +17,7 @@ forwardSearchAfter = true
 
 [language-server.texlab.config.texlab.chktex]
 onOpenAndSave = true
-additionalArgs = ["-n3"]
+additionalArgs = ["-n3"] # ignore parenthesis warning
 
 [language-server.texlab.config.texlab.forwardSearch]
 executable = "evince-synctex"
