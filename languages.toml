@@ -17,7 +17,7 @@ forwardSearchAfter = true
 
 [language-server.texlab.config.texlab.chktex]
 onOpenAndSave = true
-additionalArgs = ["-n3"] # ignore parenthesis warning
+additionalArgs = ["-n1 -n3 -n9 -n17"] # ignore some warnings
 
 [language-server.texlab.config.texlab.forwardSearch]
 executable = "evince-synctex"
@@ -35,3 +35,12 @@ name = "txt"
 scope = "source.txt"
 file-types = ["txt", "text"]
 soft-wrap.wrap-at-text-width = true
+
+
+[language-server.tinymist]
+command = "tinymist"
+config = { exportPdf = "onType", outputPath = "$root/$name" }
+
+[[language]]
+name = "typst"
+language-servers = ["tinymist"]
