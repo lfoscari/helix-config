@@ -40,7 +40,7 @@ mode.select = "SELECT"
 C-s = ":w" # save with ctrl-s
 A-x = "extend_to_line_bounds" # unselect a line with shift+X
 X = "select_line_above"
-C-space = ":open ~/Dropbox/Unimi/Dottorato/Notes/Next.md"
+C-space = ":open ~/Dropbox/Unimi/Dottorato/Notes/To-do list.md"
 
 [keys.select]
 A-x = "extend_to_line_bounds" # unselect a line with shift+X

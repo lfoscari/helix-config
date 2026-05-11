@@ -6,6 +6,7 @@ args = [
   "-pdf",
   "-interaction=nonstopmode",
   "-synctex=1",
+  "-bibtex",
   "-aux-directory=/tmp",
   "-output-directory=/tmp", # "."
   "%f"
@@ -22,12 +23,14 @@ additionalArgs = ["-n1 -n3 -n9 -n17"] # ignore some warnings
 [language-server.texlab.config.texlab.forwardSearch]
 executable = "evince-synctex"
 args = ["-f", "%l", "%p", "\"texlab -i %f -l %l\""]
+# args = ["-f", "%l", "%p"]
 
 
 
 [[language]]
 name = "markdown"
 soft-wrap.wrap-at-text-width = true
+language-servers = ["marksman", "harper-ls"]
 
 
 [[language]]
@@ -39,7 +42,7 @@ soft-wrap.wrap-at-text-width = true
 
 [language-server.tinymist]
 command = "tinymist"
-config = { exportPdf = "onType", outputPath = "$root/$name" }
+# config = { exportPdf = "onType", outputPath = "$root/$name" }
 
 [[language]]
 name = "typst"
